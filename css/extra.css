@@ -1,0 +1,11 @@
+.window {
+    padding: 10px;
+    border: 4px;
+    border-style: outset;
+
+    border-color: rgb(50,50,50);
+
+    margin: 10px;
+
+    background-color: white;
+}
