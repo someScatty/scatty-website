@@ -23,8 +23,17 @@ ul {
     margin-bottom: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-right: 1%;
     background-color: rgba(0, 0, 0, 0.07);
 
     font-family: sans-serif;
     font-weight: bold;
+}
+button {
+    /* display: block; */
+    font-family: sans-serif;
+    font-style: italic;
+    border-style: solid;
+    margin-top: 5px;
+    height: 2.2em;
 }
