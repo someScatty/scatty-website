@@ -28,40 +28,24 @@ async function updatePage(list) {
 async function updateImageData() {
     const JSONFILE = new Request(metadata);
     const JSONDATA = fetch(JSONFILE)
-        .then((response) => response.blob())
+        .then((response) => response.json())
         .then((response) => {
             console.log(response);
-            // const objectURL = URL.createObjectURL(response);
-            // console.log(objectURL);
+            const imageName = mainURL.searchParams.get("image");
+            console.log(imageName);
 
-            let FileRead = new FileReader();
-            FileRead.addEventListener("loadend", function(the) {
-                // console.log(the.srcElement.result);
-                let myJSONreal = JSON.parse(FileRead.result).list;
-                // console.log(FileRead.result);
-                // console.log(JSON.parse(FileRead.result));
-                const imageName = mainURL.searchParams.get("image");
-                console.log(imageName);
-                let currentTime
-                for (let imID = 0; imID < myJSONreal.length - 1; imID++) {
-                    if (myJSONreal[imID].name == imageName) {
-                        currentTime = myJSONreal[imID];
-                    }
-                };
-                console.log(currentTime);
-                if (currentTime) {
-                    updatePage(currentTime);
-                } else {
-                    console.error("No such thing as that image. try smth else.")
+            let currentTime
+            for (let imID = 0; imID < response.list.length - 1; imID++) {
+                if (response.list[imID].name == imageName) {
+                    currentTime = response.list[imID];
                 }
-            });
-            FileRead.readAsText(response);
-            // console.log(theJSON);
-
-            // var dataReal = new Response(response);
-            // console.log(dataReal);
-            // var ut = JSON.parse(objectURL);
-            // console.log(ut);
+            };
+            console.log(currentTime);
+            if (currentTime) {
+                updatePage(currentTime);
+            } else {
+                console.error("No such thing as that image. try smth else.")
+            }
         });
 }
 updateImageData();
