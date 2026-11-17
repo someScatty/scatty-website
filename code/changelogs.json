@@ -2,7 +2,7 @@
     "changelogs": [{
         "name": "Automation Update",
         "date": "17 November 2026",
-        "realHTML": "<ul><li><a href='./changelog.html'>New Changelog Page!</a></li><li>Because I am a mindless idiot, the Image Viewer now gets the json directly instead of calling a blob and just converting it to json. Hooray for me... =m=</li></ul>",
+        "realHTML": "<ul><li><a href='./changelog.html'>New Changelog Page!</a></li><li>Because I am a mindless idiot, the Image Viewer now gets the json directly instead of calling a blob and just converting it to json. Hooray for me... =m=</li><li>[PATCH] Added my discord user :p (there wasn't really a harm in it)</li></ul>",
         "notes": "Really proud of my website so far! Loving it! 7/10, could use some more cheese"
     },{
         "name": "First Update (Image Viewer)",
