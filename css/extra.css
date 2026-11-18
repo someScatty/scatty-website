@@ -9,6 +9,14 @@
 
     background-color: white;
 }
+.window img {
+    border: 4px;
+    border-style: outset;
+    border-color: rgb(50,50,50);
+
+    width: 100%;
+    height: 100%;
+}
 
 .taskbar {
     position: sticky;
@@ -33,7 +41,15 @@
     padding: 5px;
     background-color: orange;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
     /* align-self:last baseline; */
+}
+.taskbar #scattying:hover {
+    background-color: rgb(255, 212, 82);
+}
+.taskbar #scattying:active {
+    background-color: tan;
 }
 
 .taskbar button {
@@ -61,4 +77,28 @@
 .taskbar p {
     margin: 0;
     width:fit-content;
+}
+
+.imagepreview {
+    width: 10vw;
+    position: fixed;
+    margin-top: -1em;
+    margin-left: calc(5vw + 5px);
+
+    filter: drop-shadow(0 10px 5px rgb(0,0,0,0.2));
+    
+    opacity: 0%;
+    display: none;
+    /* transition: opacity 0.2s; */
+}
+a:hover > .imagepreview {
+    display: block;
+    opacity: 100%;
+}
+.imagepreview img {
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+
+    width: calc(100% - 10px);
 }

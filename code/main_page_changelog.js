@@ -5,8 +5,7 @@ const metadata = new URL(mainURL.origin + "/code/changelogs.json");
 console.log(metadata);
 
 const maxChangelogsPerLoad = 3;
-
-const changeFETCH = fetch(metadata)
+fetch(metadata)
     .then((response) => response.json())
     .then((response) => {
         // console.log(response.changelogs);

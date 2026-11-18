@@ -52,14 +52,16 @@ function loadMore() {
     }
 }
 
-changeFETCH.then(() => {
-    // insertChangelog(changelogs[0]);
-    loadMore();
-    if (changelogs.length <= maxChangelogsPerLoad) {
-        // divider.style.display = "none";
-        reloadButton.style.display = "none";
-    }
-    console.log("confirm", reloadButton);
-});
-// reloadButton.addEventListener("onclick", loadMore);
-reloadButton.onclick = loadMore;
+window.onload = function() {
+    changeFETCH.then(() => {
+        // insertChangelog(changelogs[0]);
+        loadMore();
+        if (changelogs.length <= maxChangelogsPerLoad) {
+            // divider.style.display = "none";
+            reloadButton.style.display = "none";
+        }
+        console.log("confirm", reloadButton);
+    });
+    // reloadButton.addEventListener("onclick", loadMore);
+    reloadButton.onclick = loadMore;
+}

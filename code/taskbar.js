@@ -1,8 +1,9 @@
 taskbar = document.getElementsByClassName("taskbar")[0];
 console.log(taskbar);
 
-scattyingMarketing = document.createElement("p");
+scattyingMarketing = document.createElement("a");
 scattyingMarketing.innerText = "scatty.ing";
+scattyingMarketing.href = "./index.html";
 scattyingMarketing.id = "scattying";
 
 function createTaskbarButton(name, link) {
@@ -22,12 +23,10 @@ function createTaskbarButton(name, link) {
     return initial;
 }
 
-const home = createTaskbarButton("Home Page", "./index.html");
 const changelog = createTaskbarButton("Changelog", "./changelog.html");
 const accounts = createTaskbarButton("Accounts", "./accounts.html");
 
 taskbar.appendChild(scattyingMarketing);
 
-taskbar.appendChild(home);
 taskbar.appendChild(changelog);
 taskbar.appendChild(accounts);

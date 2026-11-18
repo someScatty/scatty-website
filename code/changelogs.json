@@ -1,5 +1,10 @@
 {
     "changelogs": [{
+        "name": "Image Viewer V2",
+        "date": "18 November 2026",
+        "realHTML": "<ul><li>Added Image Preview Popups for the Image Viewer</li><li>Updated Image Viewer Page (Topbar + Sizing Readjustment + Gets the image directly now)</li><li>Moved Main Page link of Topbar into the orange box that says \"scatty.ing\"</li></ul>",
+        "notes": "Only did this update because the cool ass friend(tm) suggested it tbh (also it was due for a change anyway)"
+    },{
         "name": "the topbar update ...plus a few extra stuff",
         "date": "17 November 2026",
         "realHTML": "<p>The actual first update to work on replacing my strawpage!</p><ul><li>Added a topbar! Click le buttons</li><li><a href='./accounts.html'>New Accounts Page!</a> Thought it would be cool to add, since my strawpage had one. This one's a bit bigger though.</li><li>Fixed the \"Load Earlier Changelogs...\" button not working at all :3</li><li>Made Scatty's Reference Sheet accessible both with a link hidden in the Home Page AND by fixing the Image Viewer [i thought the arrays worked like lua and never changed it when I initially updated the code to use response.json()]</li><li style='color: blue;'>autism stat. (dunno why I didn't include this earlier but now its there!)</li></ul>",

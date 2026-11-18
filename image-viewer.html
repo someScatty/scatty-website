@@ -7,12 +7,19 @@
 
     <script src="code/image-viewer-code.js"></script>
 </head>
+
+<!-- the newly implemented taskbar -->
+<div class="taskbar"></div>
+<script src="code/taskbar.js"></script>
+
 <body style="background-color: white;">
-    <div class="window" style="width: calc(50% - 20px)">
-        <img id="dance" style="width: 100%;">
+    <div class="window">
+        <div style="width: fit-content; height: 50vh; margin-right: 10px;">
+            <img id="dance">
+        </div>
         <h1 id="nameBIG"></h1>
         <hr>
         <p id="descBIG"></p>
-        <button onclick="history.go(-1)">Go Back Home</button>
+        <button onclick="history.go(-1)">Go Back</button>
     </div>
 </body>

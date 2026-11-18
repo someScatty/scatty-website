@@ -17,13 +17,14 @@ async function updatePage(list) {
 
     let fullPath = "./images/" + list.file_path;
     console.log(fullPath);
-    const IMAGEDATA = fetch(fullPath)
-        .then((response) => response.blob())
-        .then((response) => {
-            console.log(response);
-            let imageLink = URL.createObjectURL(response);
-            image.src = imageLink;
-        });
+    // const IMAGEDATA = fetch(fullPath)
+    //     .then((response) => response.blob())
+    //     .then((response) => {
+    //         console.log(response);
+    //         let imageLink = URL.createObjectURL(response);
+    //         image.src = imageLink;
+    //     });
+    image.src = fullPath;
 }
 async function updateImageData() {
     const JSONFILE = new Request(metadata);
@@ -48,7 +49,8 @@ async function updateImageData() {
             }
         });
 }
-updateImageData();
+window.onload = updateImageData
+// updateImageData();
 
 // const metaJSON = JSON.parse(JSONFILE);
 // console.log(metaJSON);
