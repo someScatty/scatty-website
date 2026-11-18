@@ -12,7 +12,7 @@ function createImageEmbed(hrefElement, color) {
     // imageEmbed.style.width = "fit-content";
 
     const imagePreview = document.createElement("img");
-    imagePreview.src = hrefElement;
+    imagePreview.src = new URL(hrefElement);
     imageEmbed.appendChild(imagePreview);
 
     // console.log(this);
