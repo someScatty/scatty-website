@@ -42,8 +42,9 @@ function updateImageEmbedLinks() {
                     for (let index2 = 0; index2 < list.length; index2++) {
                         if (list[index2].name == imageName) {
                             const file_path = aLink.origin + "/images/" + list[index2].file_path;
+                            const fileURL = URL.createObjectURL(fetch(file_path).then((response) => response.blob()));
                             // resolve(createImageEmbed(file_path));
-                            const embed = createImageEmbed(file_path, list[index2].color || "white");
+                            const embed = createImageEmbed(fileURL, list[index2].color || "white");
                             // embed.style.display = "none";
                             hrefL.appendChild(embed);
                             break;
