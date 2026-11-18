@@ -9,3 +9,56 @@
 
     background-color: white;
 }
+
+.taskbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    /* height: min-content; */
+    /* width: calc(1vw + 16); */
+
+    display: inline-flex;
+    width: 100vw;
+
+    border-bottom-style: groove;
+    border-color: white;
+    /* border-width: 0; */
+    border-bottom-width: 2.5px;
+
+    /* position: absolute; */
+}
+
+#scattying {
+    padding: 5px;
+    background-color: orange;
+    font-weight: bold;
+    /* align-self:last baseline; */
+}
+
+.taskbar button {
+    /* background: none; */
+    background-color: rgb(50,50,50);
+    color: white;
+    margin: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-style: groove;
+    border-width: 0;
+    border-left-width: 2.5px;
+    border-color: white;
+
+    height: 100%;
+}
+.taskbar button:hover {
+    background-color: rgb(100,100,100);
+}
+.taskbar button:active {
+    background-color: rgb(200, 90, 132);
+}
+.taskbar p {
+    margin: 0;
+    width:fit-content;
+}

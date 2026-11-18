@@ -35,7 +35,7 @@ async function updateImageData() {
             console.log(imageName);
 
             let currentTime
-            for (let imID = 0; imID < response.list.length - 1; imID++) {
+            for (let imID = 0; imID < response.list.length; imID++) {
                 if (response.list[imID].name == imageName) {
                     currentTime = response.list[imID];
                 }

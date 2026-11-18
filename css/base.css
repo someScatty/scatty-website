@@ -37,3 +37,10 @@ button {
     margin-top: 5px;
     height: 2.2em;
 }
+
+body {
+    margin: 0;
+}
+.bodyReplace {
+    margin: 8px;
+}

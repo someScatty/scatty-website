@@ -45,8 +45,9 @@ function loadMore() {
         console.log(loadedChangelogs.length);
         insertChangelog(changelogs[loadedChangelogs.length]);
     }
-    if (loadedChangelogs.length < changelogs.length) {
+    if (loadedChangelogs.length >= changelogs.length) {
         // divider.style.display = "none";
+        console.log("load check");
         reloadButton.style.display = "none";
     }
 }
@@ -58,7 +59,7 @@ changeFETCH.then(() => {
         // divider.style.display = "none";
         reloadButton.style.display = "none";
     }
-    reloadButton.addEventListener("onclick", () => {
-        loadMore();
-    });
+    console.log("confirm", reloadButton);
 });
+// reloadButton.addEventListener("onclick", loadMore);
+reloadButton.onclick = loadMore;
