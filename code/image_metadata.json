@@ -11,5 +11,29 @@
        "date": "30 October 2026",
        "description": "Drew this the day after I finished my October 2026 profile picture! Could use a bit more work on structure and stuff, but I like how it is for now! :3",
        "color": "cadetblue"
+    }, {
+        "file_path": "snowsadday.png",
+        "name": "Snow Sad Day",
+        "date": "???",
+        "description": "A picture of Snow Sad Day from the latest published version of Flood Escape Operation (original).",
+        "color": "lightblue"
+    }, {
+        "file_path": "oldfeofacility.png",
+        "name": "Old FEO Facility",
+        "date": "???",
+        "description": "A picture of Old FEO Facility from the latest published version of Flood Escape Operation (original).",
+        "color": "lightblue"
+    }, {
+        "file_path": "sr-re-thumbnail.png",
+        "name": "SR:RE Thumbnail 1",
+        "date": "4? November 2025",
+        "description": "The last thumbnail that SR:RE had for the latter half of the original run, extending into the entire first reboot era. I really like this thumbnail, but it doesn't really fit what SR:RE's going for nowadays.",
+        "color": "cyan"
+    }, {
+        "color": "cyan",
+        "file_path": "gorf.png",
+        "name": "Gorf",
+        "date": "31 August 2025",
+        "description": "Isn't he so beautiful? (Screenshot from SR:RE | Code Haul)"
     }]
 }

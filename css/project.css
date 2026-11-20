@@ -1,0 +1,84 @@
+.grid {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 10px;
+
+    grid-template-columns: 50% 50%;
+}
+.gridChild {
+    padding: 4px;
+    border: 4px;
+    border-style: outset;
+
+    border-color: rgb(50,50,50);
+
+    margin: 4px;
+
+    background-color: white;
+}
+.gridChild > a {
+    text-decoration: none;
+    color: unset;
+}
+
+.projectHeader {
+    /* display: flex; */
+    /* align-items: flex-end; */
+    display: grid;
+    margin: 10px;
+    grid-template-columns: calc(20vw + 28px) auto;
+    max-height: calc(30vh + 28px);
+    /* margin-bottom: 0; */
+    background-color: rgb(42, 60, 40);
+    overflow-block:clip;
+    /* overflow-x: hidden; */
+    /* background-color: cyan; */
+}
+.projectIcon {
+    /* width: 20vw; */
+    margin: 0;
+    /* position: fixed; */
+    /* height: 100%; */
+}
+.projectIcon > img {
+    width: 20vw;
+    height: 30vh;
+    object-fit: contain;
+}
+.projectIcon .window {
+    margin: 0;
+}
+.projectDesc {
+    display: grid;
+    grid-template-rows: calc(2.4em + 10px) calc(100% - 2.4em - 10px);
+    max-height: inherit;
+}
+.projectTitle {
+    /* width:inherit; */
+    position:relative;
+    font-family: sans-serif;
+    /* width: min-content; */
+    /* align-self: flex-end; */
+    background-color: cyan;
+    margin: 0;
+
+    padding: 5px;
+    padding-left: 10px;
+}
+.projectDetails {
+    overflow-y:auto;
+    /* overflow-anchor: auto; */
+    position:relative;
+
+    background-color: rgb(21, 20, 20);
+    color: white;
+    margin: 0;
+}
+.projectDetails > p {
+    font-family: Courier;
+    background-color: rgba(150, 255, 197, 0.05);
+}
+.projectDetails a {
+    color: greenyellow;
+    /* visibility:hidden; */
+}

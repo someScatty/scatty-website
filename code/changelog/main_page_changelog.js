@@ -18,3 +18,6 @@ fetch(metadata)
         ChangelogChanges.innerHTML = currentChange.realHTML;
         ChangelogNotes.innerText = currentChange.notes;
     })
+
+// just in case
+updateImageEmbedLinks();

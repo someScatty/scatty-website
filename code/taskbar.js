@@ -25,8 +25,10 @@ function createTaskbarButton(name, link) {
 
 const changelog = createTaskbarButton("Changelog", "./changelog.html");
 const accounts = createTaskbarButton("Accounts", "./accounts.html");
+const projects = createTaskbarButton("Projects", "./projects.html");
 
 taskbar.appendChild(scattyingMarketing);
 
 taskbar.appendChild(changelog);
 taskbar.appendChild(accounts);
+taskbar.appendChild(projects);
