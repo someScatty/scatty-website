@@ -1,5 +1,10 @@
 {
     "changelogs": [{
+        "name": "OMG ITS THE PROJECTS UPDATE I CAN RETIRE OMGOMGOMGGGGGGGGGG",
+        "date": "25 November 2026",
+        "realHTML": "<ul><li>Code Cleanup</li><li>Image Viewer Preview's position has been tweaked up! :3</li><li><a href='./projects.html'>New Projects Page!</a> Check out my projects blehhhhhh<ul><li>Expect the projects page to have more polish soon... this update took long enough already.</li></ul></li><li>Minor CSS changes because they're just needed and they're nice</li></ul>",
+        "notes": "Now there's just one update left..."
+    },{
         "name": "Image Viewer V2",
         "date": "18 November 2026",
         "realHTML": "<ul><li>Added Image Preview Popups for the Image Viewer</li><li>Updated Image Viewer Page (Topbar + Sizing Readjustment + Gets the image directly now)</li><li>Moved Main Page link of Topbar into the orange box that says \"scatty.ing\"</li></ul>",

@@ -4,9 +4,12 @@ hr {
 }
 
 
-p, a {
+p {
     font-family: sans-serif;
     margin: 0;
+}
+a {
+    font-family: inherit;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -18,7 +21,7 @@ del {
     color: rgba(255, 0, 0, 0.5);
     font-size: 75%;
 }
-ul {
+ul, ol {
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -28,7 +31,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.07);
 
     font-family: sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 button {
     /* display: block; */
@@ -44,4 +47,5 @@ body {
 }
 .bodyReplace {
     margin: 8px;
+    margin-top: 0;
 }

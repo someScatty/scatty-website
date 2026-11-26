@@ -1,5 +1,4 @@
 taskbar = document.getElementsByClassName("taskbar")[0];
-console.log(taskbar);
 
 scattyingMarketing = document.createElement("a");
 scattyingMarketing.innerText = "scatty.ing";
@@ -25,8 +24,10 @@ function createTaskbarButton(name, link) {
 
 const changelog = createTaskbarButton("Changelog", "./changelog.html");
 const accounts = createTaskbarButton("Accounts", "./accounts.html");
+const projects = createTaskbarButton("Projects", "./projects.html");
 
 taskbar.appendChild(scattyingMarketing);
 
 taskbar.appendChild(changelog);
 taskbar.appendChild(accounts);
+taskbar.appendChild(projects);
