@@ -1,9 +1,9 @@
 {
     "changelogs": [{
-        "name": "OMG ITS THE PROJECTS UPDATE I CAN RETIRE OMGOMGOMGGGGGGGGGG",
+        "name": "[WIP] OMG ITS THE PROJECTS UPDATE I CAN RETIRE OMGOMGOMGGGGGGGGGG",
         "date": "25 November 2026",
         "realHTML": "<ul><li>Code Cleanup</li><li>Image Viewer Preview's position has been tweaked up! :3</li><li><a href='./projects.html'>New Projects Page!</a> Check out my projects blehhhhhh<ul><li>Expect the projects page to have more polish soon... this update took long enough already.</li></ul></li><li>Minor CSS changes because they're just needed and they're nice</li></ul>",
-        "notes": "Now there's just one update left..."
+        "notes": "Apparently, the links got COMPLETELY overridden on the porject pages. I'm gonna try to find a way to fix it soon, but for now just know ANY external link in projects.html DOES NOT WORK."
     },{
         "name": "Image Viewer V2",
         "date": "18 November 2026",
