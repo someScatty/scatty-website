@@ -33,7 +33,7 @@ function updateImageEmbedLinks() {
         const aLink = new URL(hrefL.href || hrefL.preserve);
 
         // hrefL.removeEventListener("onhover", );
-        if ((hrefL.host = docURL.host) && (aLink.pathname = "/image-viewer.html")) {
+        if ((hrefL.host == docURL.host) && (aLink.pathname == "/image-viewer.html")) {
             const imageName = aLink.searchParams.get("image");
             const dataGetting = new URL(docURL.origin + "/code/image_metadata.json");
             fetch(dataGetting).then((response) => response.json())
