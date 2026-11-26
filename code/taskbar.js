@@ -1,5 +1,4 @@
 taskbar = document.getElementsByClassName("taskbar")[0];
-console.log(taskbar);
 
 scattyingMarketing = document.createElement("a");
 scattyingMarketing.innerText = "scatty.ing";

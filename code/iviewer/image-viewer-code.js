@@ -35,15 +35,16 @@ async function updateImageData() {
             const imageName = mainURL.searchParams.get("image");
             console.log(imageName);
 
-            let currentTime
-            for (let imID = 0; imID < response.list.length; imID++) {
+            let imageJSON
+            for (let imID in response.list) {
                 if (response.list[imID].name == imageName) {
-                    currentTime = response.list[imID];
+                    imageJSON = response.list[imID];
+                    break;
                 }
-            };
-            console.log(currentTime);
-            if (currentTime) {
-                updatePage(currentTime);
+            }
+            console.log(imageJSON);
+            if (imageJSON) {
+                updatePage(imageJSON);
             } else {
                 console.error("No such thing as that image. try smth else.")
             }

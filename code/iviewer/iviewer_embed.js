@@ -4,7 +4,7 @@ const docURL = new URL(document.URL);
 // console.log(docURL);
 
 function createImageEmbed(hrefElement, color) {
-    console.log("creation");
+    // console.log("creation");
     const imageEmbed = document.createElement("div");
     // imageEmbed.class = "window imagepreview";
     imageEmbed.className = "window imagepreview";
@@ -27,10 +27,10 @@ function updateImageEmbedLinks() {
     // console.log("reload");
     // const aes = document.getElementsByTagName("a");
     const aes = document.querySelectorAll("a"); // have a feeling this is better
-    console.log("reload", aes);
+    // console.log("reload", aes);
     for (let index = 0; index < aes.length; index++) {
         const hrefL = aes[index];
-        const aLink = new URL(hrefL.href);
+        const aLink = new URL(hrefL.href || hrefL.preserve);
 
         // hrefL.removeEventListener("onhover", );
         if ((hrefL.host = docURL.host) && (aLink.pathname = "/image-viewer.html")) {
@@ -48,7 +48,7 @@ function updateImageEmbedLinks() {
                             const embed = createImageEmbed(file_path, list[index2].color || "white");
                             const coordinates = hrefL.getBoundingClientRect();
                             embed.style.transform = "translateX(" + (coordinates.x + Math.max(24, coordinates.width) - 24) + "px)";
-                            console.log(coordinates);
+                            // console.log(coordinates);
                             // embed.style.display = "none";
                             hrefL.appendChild(embed);
                             break;

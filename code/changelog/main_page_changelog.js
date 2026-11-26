@@ -1,8 +1,8 @@
 const mainURL = new URL(document.URL);
-console.log(mainURL);
+// console.log(mainURL);
 
 const metadata = new URL(mainURL.origin + "/code/changelogs.json");
-console.log(metadata);
+// console.log(metadata);
 
 const maxChangelogsPerLoad = 3;
 fetch(metadata)

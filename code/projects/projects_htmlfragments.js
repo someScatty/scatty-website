@@ -1,8 +1,6 @@
-console.log(document);
+// console.log(document);
 const projectURL = new URL(document.URL);
-console.log(projectURL);
-
-// const ogTitle = document.title;
+// console.log(projectURL);
 
 const fragmentOrigin = projectURL.origin + "/htmlFractures";
 const displayedPage = projectURL.searchParams.get("page") || "projectwelcome";
@@ -11,9 +9,10 @@ const htmlFragmentPlace = document.getElementById("htmlFragmentPlace");
 
 const fragmentURL = new URL(fragmentOrigin + "/" + displayedPage + ".html");
 fetch(fragmentURL).then((response) => response.text())
+    // replace the bodyReplace with the fragment itself
     .then((fragment) => {
         // console.log(fragment);
-        htmlFragmentPlace.innerHTML = fragment;
+        htmlFragmentPlace.outerHTML = fragment;
         // console.log(htmlFragmentPlace);
         // htmlFragmentPlace.style.display = "none";
         // console.log(ogTitle, document.title)
@@ -25,6 +24,9 @@ fetch(fragmentURL).then((response) => response.text())
         }
 
         document.title = "Projects - " + title;
+        // updateImageEmbedLinks();
+    })
+    .then(() => {
         updateImageEmbedLinks();
     })
 

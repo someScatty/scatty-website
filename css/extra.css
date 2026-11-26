@@ -36,6 +36,8 @@
     border-bottom-width: 2.5px;
 
     font-family: sans-serif;
+
+    z-index: 1;
     /* position: absolute; */
 }
 
