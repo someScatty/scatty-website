@@ -1,31 +1,17 @@
-let imageData;
-
-const docURL = new URL(document.URL);
-// console.log(docURL);
-
 function createImageEmbed(hrefElement, color) {
     // console.log("creation");
     const imageEmbed = document.createElement("div");
-    // imageEmbed.class = "window imagepreview";
-    imageEmbed.className = "window imagepreview";
+    imageEmbed.className = "window embed imagepreview";
     imageEmbed.style.backgroundColor = color;
-    // imageEmbed.style.width = "fit-content";
 
     const imagePreview = document.createElement("img");
     imagePreview.src = new URL(hrefElement);
     imageEmbed.appendChild(imagePreview);
 
-    // console.log(this);
-
-    // const script = document.createElement("script");
-    // script.innerHTML = ""
-
     return imageEmbed;
 }
 
-function updateImageEmbedLinks() {
-    // console.log("reload");
-    // const aes = document.getElementsByTagName("a");
+function updateImageEmbeds() {
     const aes = document.querySelectorAll("a"); // have a feeling this is better
     // console.log("reload", aes);
     for (let index = 0; index < aes.length; index++) {
@@ -33,9 +19,9 @@ function updateImageEmbedLinks() {
         const aLink = new URL(hrefL.href || hrefL.preserve);
 
         // hrefL.removeEventListener("onhover", );
-        if ((hrefL.host == docURL.host) && (aLink.pathname == "/image-viewer.html")) {
+        if ((hrefL.host == mainURL.host) && (aLink.pathname == "/image-viewer.html")) {
             const imageName = aLink.searchParams.get("image");
-            const dataGetting = new URL(docURL.origin + "/code/image_metadata.json");
+            const dataGetting = new URL(mainURL.origin + "/code/image_metadata.json");
             fetch(dataGetting).then((response) => response.json())
                 .then((response) => {
                     // console.log(response);

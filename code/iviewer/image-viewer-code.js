@@ -1,10 +1,5 @@
-const mainURL = new URL(document.URL);
-console.log(mainURL);
-
-// console.log(encodeURI("Current Scatty PFP"));
-
 const metadata = new URL(mainURL.origin + "/code/image_metadata.json");
-console.log(metadata);
+// console.log(metadata);
 
 async function updatePage(list) {
     const image = document.getElementById("dance");
@@ -50,7 +45,7 @@ async function updateImageData() {
             }
         });
 }
-window.onload = updateImageData
+window.onload = updateImageData;
 // updateImageData();
 
 // const metaJSON = JSON.parse(JSONFILE);

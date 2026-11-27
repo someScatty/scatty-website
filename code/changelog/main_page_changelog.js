@@ -1,6 +1,3 @@
-const mainURL = new URL(document.URL);
-// console.log(mainURL);
-
 const metadata = new URL(mainURL.origin + "/code/changelogs.json");
 // console.log(metadata);
 
@@ -20,4 +17,4 @@ fetch(metadata)
     })
 
 // just in case
-updateImageEmbedLinks();
+updateImageEmbeds();

@@ -1,14 +1,11 @@
-const mainURL = new URL(document.URL);
-console.log(mainURL);
-
-const metadata = new URL(mainURL.origin + "/code/changelogs.json");
-console.log(metadata);
+const ChangelogMetadata = new URL(mainURL.origin + "/code/changelogs.json");
+// console.log(ChangelogMetadata);
 
 const maxChangelogsPerLoad = 3;
 let loadedChangelogs = new Array;
 let changelogs = new Array;
 
-const changeFETCH = fetch(metadata)
+const changeFETCH = fetch(ChangelogMetadata)
     .then((response) => response.json())
     .then((response) => {
         // console.log(response.changelogs);

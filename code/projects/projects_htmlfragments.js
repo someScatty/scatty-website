@@ -1,9 +1,5 @@
-// console.log(document);
-const projectURL = new URL(document.URL);
-// console.log(projectURL);
-
-const fragmentOrigin = projectURL.origin + "/htmlFractures";
-const displayedPage = projectURL.searchParams.get("page") || "projectwelcome";
+const fragmentOrigin = mainURL.origin + "/htmlFractures";
+const displayedPage = mainURL.searchParams.get("page") || "projectwelcome";
 
 const htmlFragmentPlace = document.getElementById("htmlFragmentPlace");
 
@@ -27,6 +23,7 @@ fetch(fragmentURL).then((response) => response.text())
         // updateImageEmbedLinks();
     })
     .then(() => {
-        updateImageEmbedLinks();
+        updateImageEmbeds();
+        updateScratchEmbeds();
     })
 
