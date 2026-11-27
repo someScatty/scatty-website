@@ -22,12 +22,14 @@ function createTaskbarButton(name, link) {
     return initial;
 }
 
+const aboutme = createTaskbarButton("About Me", "./about-me.html");
 const changelog = createTaskbarButton("Changelog", "./changelog.html");
-const accounts = createTaskbarButton("Accounts", "./accounts.html");
+// const accounts = createTaskbarButton("Accounts", "./accounts.html");
 const projects = createTaskbarButton("Projects", "./projects.html");
 
 taskbar.appendChild(scattyingMarketing);
 
+taskbar.appendChild(aboutme);
 taskbar.appendChild(changelog);
-taskbar.appendChild(accounts);
+// taskbar.appendChild(accounts);
 taskbar.appendChild(projects);
