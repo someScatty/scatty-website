@@ -109,8 +109,3 @@ a:hover > .embed {
 
     width: calc(10vw - 20px);
 }
-.scratchpreview {
-    display: grid;
-    grid-template-rows: 10vw 15vw;
-    width: 25vw;
-}
